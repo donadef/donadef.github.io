@@ -1,0 +1,16 @@
+.skillset .skills-group  > h3 {
+  font-size: 16px;
+  text-decoration: underline;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .skillset .skills-group > h3 {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
