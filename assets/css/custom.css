@@ -23,3 +23,7 @@
 .indent-icon {
   margin-left: 16px;
 }
+
+.fas, .fab {
+  margin-right: 5px;
+}
