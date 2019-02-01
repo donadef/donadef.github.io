@@ -144,10 +144,10 @@ p {
   margin-bottom: 0;
 }
 .sidebar-wrapper .interests-list {
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 .sidebar-wrapper .interests-list li {
-  margin-bottom: 10px;
+  margin-bottom: 1px;
 }
 .sidebar-wrapper .interests-list li:last-child {
   margin-bottom: 0;
