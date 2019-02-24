@@ -7,7 +7,7 @@
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .skillset .skills-group > h3 {
+  .skillset .skills-group  {
     display: inline-block;
     float: left;
     width: 100%;
@@ -43,11 +43,16 @@
     width: auto;
 }
 
+.wrapper.index {
+  min-width: 300px;
+}
+
 .main-wrapper.index {
+  padding: 30px;
   color: black;
 }
 
-.sidebar-wrapper.index {
+.index-sidebar-wrapper {
     min-height:0;
 }
 
@@ -67,6 +72,7 @@
   padding: 0 4px;
 }
 
+/* main */
 /* Create two equal columns that sits next to each other */
 .column {
   flex: 50%;
@@ -83,6 +89,16 @@
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 450px) {
   .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Actu France */
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .actu.france .column {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
@@ -174,6 +190,7 @@ background:#A15277;
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 5px;
+    margin-left:20px;
 }
 
 .actu-date {
@@ -181,7 +198,12 @@ background:#A15277;
     font-weight: 500;
     margin-bottom: 0px;
     margin-top: 0;
-    font-size: 14px
+    font-size: 14px;
+    margin-left:20px;
+}
+
+.actu-content {
+    margin-left:20px;
 }
 
 img.france {
