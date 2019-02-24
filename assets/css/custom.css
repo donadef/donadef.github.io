@@ -29,9 +29,6 @@
 }
 
 .text-align-center {
-  max-width: 960px;
-  margin: auto;
-  position: relative;
   text-align: center;
 }
 
@@ -46,10 +43,16 @@
     width: auto;
 }
 
-.index-main-wrapper {
-  background: #fff;
-  padding: 50px;
-  page-break-before: always;
+.main-wrapper.index {
+  color: black;
+}
+
+.sidebar-wrapper.index {
+    min-height:0;
+}
+
+.profile-container.index {
+    padding: 0;
 }
 
 .main-wrapper-nav-button {
@@ -84,4 +87,103 @@
     flex: 100%;
     max-width: 100%;
   }
+}
+
+
+/* Actuality */
+#menu-actu, #menu-actu ul{
+padding:0;
+margin:0;
+list-style:none;
+text-align:center;
+width: 100%;
+color: #fff;
+}
+
+#menu-actu li{
+display:inline-block;
+position:relative;
+width: 100%;
+}
+
+#menu-actu ul li{
+display:inherit;
+border-radius:0;
+}
+
+#menu-actu ul li:hover{
+border-radius:0;
+}
+
+#menu-actu ul li:last-child{
+border-radius:0 0 8px 8px;
+padding-bottom: 10px;
+}
+
+#menu-actu ul{
+position:absolute;
+z-index: 1000;
+max-height:0;
+left: 0;
+right: 0;
+overflow:hidden;
+-moz-transition: .8s all .3s;
+-webkit-transition: .8s all .3s;
+transition: .8s all .3s;
+background:#A15277;
+border-radius:0 0 8px 8px;
+padding: 0px 10px 0px 10px;
+margin-bottom: 20px;
+}
+
+#menu-actu li:hover ul{
+max-height:200em;
+}
+
+/* background des menus */
+#menu-actu li:first-child{
+background-image:-webkit-linear-gradient(top, #894465 0%, #A15277 100%);
+background-image:linear-gradient(to bottom, #894465 0%, #A15277 100%);
+}
+
+/* background des liens sous menus */
+#menu-actu li:first-child li{
+background:#A15277;
+}
+
+.actu {
+    padding-bottom: 15px;
+    text-align: left;
+    border-bottom: 2px dotted;
+}
+
+.actu:last-child {
+    border-bottom-width:0;
+}
+
+.actu-title {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.actu-name {
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.actu-date {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+    margin-bottom: 0px;
+    margin-top: 0;
+    font-size: 14px
+}
+
+img.france {
+    max-width:300px;
 }
