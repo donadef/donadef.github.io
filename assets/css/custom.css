@@ -41,14 +41,47 @@
   margin: 10px;
 }
 
+.translation {
+    height: 20px;
+    width: auto;
+}
+
 .index-main-wrapper {
   background: #fff;
-  padding: 60px;
+  padding: 50px;
   page-break-before: always;
 }
 
-.index-table {
-  width: 100%;
-  text-align: center
+.main-wrapper-nav-button {
+  transform: translateY(-25px);
 }
 
+
+/* Link to english and french resume */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column div {
+  margin-top: 8px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 450px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
