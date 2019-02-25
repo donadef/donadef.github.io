@@ -7,7 +7,7 @@
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .skillset .skills-group > h3 {
+  .skillset .skills-group  {
     display: inline-block;
     float: left;
     width: 100%;
@@ -29,9 +29,6 @@
 }
 
 .text-align-center {
-  max-width: 960px;
-  margin: auto;
-  position: relative;
   text-align: center;
 }
 
@@ -41,14 +38,174 @@
   margin: 10px;
 }
 
-.index-main-wrapper {
-  background: #fff;
-  padding: 60px;
-  page-break-before: always;
+.translation {
+    height: 20px;
+    width: auto;
 }
 
-.index-table {
-  width: 100%;
-  text-align: center
+.wrapper.index {
+  min-width: 300px;
 }
 
+.main-wrapper.index {
+  padding: 30px;
+  color: black;
+}
+
+.index-sidebar-wrapper {
+    min-height:0;
+}
+
+.profile-container.index {
+    padding: 0;
+}
+
+.main-wrapper-nav-button {
+  transform: translateY(-25px);
+}
+
+
+/* Link to english and french resume */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* main */
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column div {
+  margin-top: 8px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 450px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Actu France */
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .actu.france .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+/* Actuality */
+#menu-actu, #menu-actu ul{
+padding:0;
+margin:0;
+list-style:none;
+text-align:center;
+width: 100%;
+color: #fff;
+}
+
+#menu-actu li{
+display:inline-block;
+position:relative;
+width: 100%;
+}
+
+#menu-actu ul li{
+display:inherit;
+border-radius:0;
+}
+
+#menu-actu ul li:hover{
+border-radius:0;
+}
+
+#menu-actu ul li:last-child{
+border-radius:0 0 8px 8px;
+padding-bottom: 10px;
+}
+
+#menu-actu ul{
+position:absolute;
+z-index: 1000;
+max-height:0;
+left: 0;
+right: 0;
+overflow:hidden;
+-moz-transition: .8s all .3s;
+-webkit-transition: .8s all .3s;
+transition: .8s all .3s;
+background:#A15277;
+border-radius:0 0 8px 8px;
+padding: 0px 10px 0px 10px;
+margin-bottom: 20px;
+}
+
+#menu-actu li:hover ul{
+max-height:200em;
+}
+
+/* background des menus */
+#menu-actu li:first-child{
+background-image:-webkit-linear-gradient(top, #894465 0%, #A15277 100%);
+background-image:linear-gradient(to bottom, #894465 0%, #A15277 100%);
+}
+
+/* background des liens sous menus */
+#menu-actu li:first-child li{
+background:#A15277;
+}
+
+.actu {
+    padding-bottom: 15px;
+    text-align: left;
+    border-bottom: 2px dotted;
+}
+
+.actu:last-child {
+    border-bottom-width:0;
+}
+
+.actu-title {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.actu-name {
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 5px;
+    margin-left:20px;
+}
+
+.actu-date {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+    margin-bottom: 0px;
+    margin-top: 0;
+    font-size: 14px;
+    margin-left:20px;
+}
+
+.actu-content {
+    margin-left:20px;
+}
+
+img.france {
+    max-width:300px;
+}
