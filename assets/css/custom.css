@@ -61,9 +61,18 @@
 }
 
 .main-wrapper-nav-button {
-  transform: translateY(-25px);
+    transform: translate(60px, 20px);
+    height: 0;
 }
 
+@media (max-width: 767px) {
+    .main-wrapper-nav-button {
+        transform: translate(30px, 25px);
+    }
+    .main-wrapper-nav-button a {
+        color: white;
+    }
+}
 
 /* Link to english and french resume */
 .row {
