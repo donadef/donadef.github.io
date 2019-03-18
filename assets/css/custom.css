@@ -68,7 +68,7 @@
 
 @media (max-width: 767px) {
     .main-wrapper-nav-button {
-        transform: translate(30px, 25px);
+        transform: translate(30px, 20px);
     }
     .main-wrapper-nav-button a {
         color: white;
