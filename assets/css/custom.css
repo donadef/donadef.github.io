@@ -177,6 +177,11 @@ background-image:linear-gradient(to bottom, #894465 0%, #A15277 100%);
 background:#A15277;
 }
 
+.img-profile {
+    background-image: url("https://donadef.github.io/assets/images/photo-index.png");
+    width: 100%
+}
+
 .actu {
     padding-bottom: 15px;
     text-align: left;
