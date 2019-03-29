@@ -15,17 +15,22 @@
   }
 }
 
+
 .wrapper {
     min-width: 16em;
+}
+
+.img-profile.index {
+  width: 100%;
+}
+
+.indent-icon {
+  margin-left: 20px;
 }
 
 .img-profile {
   width: 150px;
   height: auto;
-}
-
-.indent-icon {
-  margin-left: 20px;
 }
 
 .fas, .fab {
@@ -52,8 +57,13 @@
 }
 
 .main-wrapper.index {
-  padding: 30px;
+  padding: 20px;
+  padding-top: 5px;
   color: black;
+}
+
+.name.index {
+    margin-bottom: 0;
 }
 
 .index-sidebar-wrapper {
@@ -122,63 +132,63 @@
 
 /* Actuality */
 #menu-actu, #menu-actu ul{
-padding:0;
-margin:0;
-list-style:none;
-text-align:center;
-width: 100%;
-color: #fff;
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align:center;
+    width: 100%;
+    color: #fff;
 }
 
 #menu-actu li{
-display:inline-block;
-position:relative;
-width: 100%;
+    display:inline-block;
+    position:relative;
+    width: 100%;
 }
 
 #menu-actu ul li{
-display:inherit;
-border-radius:0;
+    display:inherit;
+    border-radius:0;
 }
 
 #menu-actu ul li:hover{
-border-radius:0;
+    border-radius:0;
 }
 
 #menu-actu ul li:last-child{
-border-radius:0 0 8px 8px;
-padding-bottom: 10px;
+    border-radius:0 0 8px 8px;
+    padding-bottom: 10px;
 }
 
 #menu-actu ul{
-position:absolute;
-z-index: 1000;
-max-height:0;
-left: 0;
-right: 0;
-overflow:hidden;
--moz-transition: .8s all .3s;
--webkit-transition: .8s all .3s;
-transition: .8s all .3s;
-background:#A15277;
-border-radius:0 0 8px 8px;
-padding: 0px 10px 0px 10px;
-margin-bottom: 20px;
+    position:absolute;
+    z-index: 1000;
+    max-height:0;
+    left: 0;
+    right: 0;
+    overflow:hidden;
+    -moz-transition: .8s all .3s;
+    -webkit-transition: .8s all .3s;
+    transition: .8s all .3s;
+    background:#A15277;
+    border-radius:0 0 8px 8px;
+    padding: 0px 10px 0px 10px;
+    margin-bottom: 20px;
 }
 
 #menu-actu li:hover ul{
-max-height:200em;
+    max-height:200em;
 }
 
 /* background des menus */
 #menu-actu li:first-child{
-background-image:-webkit-linear-gradient(top, #894465 0%, #A15277 100%);
-background-image:linear-gradient(to bottom, #894465 0%, #A15277 100%);
+    background-image:-webkit-linear-gradient(top, #894465 0%, #A15277 100%);
+    background-image:linear-gradient(to bottom, #894465 0%, #A15277 100%);
 }
 
 /* background des liens sous menus */
 #menu-actu li:first-child li{
-background:#A15277;
+    background:#A15277;
 }
 
 .actu {
